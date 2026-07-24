@@ -64,26 +64,204 @@ const BLOG_POSTS = [
 
           <puzzle-card id="10k-visits-burger" class="solved">
             <h3>10K Visits Burger</h3>
-            <p>puzzle.....</p>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden in Spawn, on top of the hill.</p>
             <solution-box>
-              <strong>Solution:</strong> Be tuff
+              <strong>Solution:</strong> Located next to the donation leaderboard in the top left of Spawn.<br/>
+              <strong>Explanation:</strong>
+              There isnt much to say, as the hint rather explains it.
+              <p>However, the location being on top of the hill isnt that clear, but the donation leaderboard's area is elevated, which, although small, is a hill.</p>
             </solution-box>
+            <p>Description: TYSM! :D (By Jay)</p>
+          </puzzle-card>
+
+          <puzzle-card id="1m-visits-burger" class="solved">
+            <h3>1M Visits Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden in Spawn, on top of the hill.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located next to the donation leaderboard in the top left of Spawn.<br/>
+              <strong>Explanation:</strong>
+              There isnt much to say, as the hint rather explains it.
+              <p>However, the location being on top of the hill isnt that clear, but the donation leaderboard's area is elevated, which, although small, is a hill.</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: TYSM! EVEN MORE! :D (By AccountDoesNothing)</p>
           </puzzle-card>
 
           <puzzle-card id="apple-burger" class="solved">
             <h3>Apple Burger</h3>
-            <p>Look around the tree area.</p>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden in Spawn, growing on a tree.</p>
             <solution-box>
-              <strong>Solution:</strong> Climb the tree.
+              <strong>Solution:</strong> Located on a tree in the corner where Kitchen, Forest and Spawn meet.<br/>
+              <strong>Explanation:</strong> There isnt much to say, as this burger is just a "look around" burger.
+              <p>You should be looking on the trees in Spawn to see if apple burger is hanging off it, like an actual apple.</p>
+              <p>Eventually, you will find the apple under the leaves in the corner where Kitchen, Forest and Spawn meet.</p>
+              <p>Touch the burger for the badge!</p> 
             </solution-box>
+            <p>Description: An apple a day takes the doctor away! Just not this one... (By AveragePerson)</p>
           </puzzle-card>
 
           <puzzle-card id="basic-burger" class="solved">
-            <h3>Basic Burger</h3>
-            <p>Spawns right at the start.</p>
+            <h3>Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In the middle of Spawn.</p>
             <solution-box>
-              <strong>Solution:</strong> Walk straight ahead.
+              <strong>Solution:</strong> Located exactly where you spawn into the game!<br/>
+              <strong>Explanation:</strong> There is no reason to actually "solve" this one, as you spawn right on top of it, so as soon as you join you touch the burger and recieve the badge! 
+              <p>Touch the burger for the badge!</p> 
             </solution-box>
+            <p>Description: Delicious fella, also really cool! Enjoy Find The Burgers! (By AccountDoesNothing)</p>
+          </puzzle-card>
+
+          <puzzle-card id="bitten-burger" class="solved">
+            <h3>Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In Spawn, on a tree.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located on the big tree near the Bradyoup character.<br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but you will eventually find it on the big tree, being pointed to by the Bradyoup character, the creator of the game.
+              <p>Touch the burger for the badge!</p> 
+            </solution-box>
+            <p>Description: Yum! I mean what WAIT NO WHA- (By Frog)</p>
+          </puzzle-card>
+
+          <puzzle-card id="bee-burger" class="solved">
+            <h3>Bee Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In Spawn, near a bee hive.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located on a beehive on a tree at the border between Spawn and Beach, near the donation leaderboard/10K Visits Burger/10M Visits Burger.<br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but you will eventually find it in Beach.
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Ya like jazz? (By Flames)</p>
+          </puzzle-card>
+
+          <puzzle-card id="beach-ball-burger" class="solved">
+            <h3>Beach Ball Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In Beach, near a volleyball court.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located on a beachball next to 3 characters playing volleyball at Beach. <br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but you will eventually find it in Beach.
+              <p>Even if you don't know what volleyball looks like, you will see 3 people playing next to a net, and the burger is being hit by Feodoric (purple-green guy).</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Painfully slow volleyball... (By Shardscapes)</p>
+          </puzzle-card>
+
+          <puzzle-card id="burger-phone" class="solved">
+            <h3>Burger Phone</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In Forest, find them.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located in Forest near the campsite. <br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but you will eventually find it in Forest.
+              <p>It is behind the campsite in the bottom right corner of Forest.</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Hello? Is anyone there? (By CasaRetro1994)</p>
+          </puzzle-card>
+
+          <puzzle-card id="burger-bush" class="solved">
+            <h3>Burger Bush</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In Forest, find an odd looking bush.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located in Forest behind the waterfall structure, in the back left corner. <br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but perhaps a bit harder.
+              <p>It will be found behind the waterfall structure in the back left corner of Forest.</p>
+              <p>Be careful not to confuse it for a regular bush!</p>
+              <p>It is easy to miss, as it's in a spot where not many would look.</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: I am NOT eating those berries. (By segios)</p>
+          </puzzle-card>
+
+          <puzzle-card id="cat-burger" class="solved">
+            <h3>Cat Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden In Spawn, cats can't swim well.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located in the pond in Spawn, near the bottom right corner.<br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but with a good hint.
+              <p>The mention of cats not being able to swim well quite evidently points towards the lake/pond located in Spawn.</p>
+              <p>Looking at it, you will find Cat Burger floating on the surface.</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Cats can't swim! (By book02_7)</p>
+          </puzzle-card>
+
+          <puzzle-card id="cake-burger" class="solved">
+            <h3>Cake Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden in Kitchen, it's getting grilled.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located on the first layer of grills in the oven in Kitchen.<br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but with a good hint.
+              <p>The mention of it being grilled should point to heat, namely in the oven.</p>
+              <p>It could be anywhere in the oven, but if you see the giant cake on the first layer inside the oven, you could think that it would be next to it.</p>
+              <p>And, you would be right to think so. It is next to the cake!</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Cake flavored burgers?? what. (By Megateapot228)</p>
+          </puzzle-card>
+          
+          <puzzle-card id="cool-burger" class="solved">
+            <h3>Cool Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden in Beach, sitting alone.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located in the top left corner of Beach, lying on a beach chair.<br/>
+              <strong>Explanation:</strong> Again, this is just a "looking around" burger, but with a hint.
+              <p>The mention of it sitting should point to a chair, namely the beach chair in the top left of Beach.</p>
+              <p>And, you will find Cool Burger sitting on it!</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Too much swag to even takl. (By book02_7)</p>
+          </puzzle-card>
+
+          <puzzle-card id="cave-exploring-burger" class="solved">
+            <h3>Cave Exploring Burger</h3>
+            <p>Difficulty: Easy</p>
+            <p>Hint: Hidden in Cave Area, find a hole in Spawn's lake. Once there, eating nothing at an empty cafe.</p>
+            <solution-box>
+              <strong>Solution:</strong> Located in the cafe in Cave, found by going through the hole in the side of the lake.<br/>
+              <strong>Explanation:</strong> This burger introduces the player to the Cave Area.
+              <p>The hint tells you how to get into the Cave Area, namely by going through a hole in the side of the lake near Kitchen.</p>
+              <p>Finding this hole, you can go through it and find a cave entrance. Touching the black entrance will take you to the Cave Area.</p>
+              <p>Now, you will have to look for such cafe by yourself.</p>
+              <p>And, you will find the cafe by going through the first passage, and on the left side of the new cave.</p>
+              <p>Inside the cafe, you will find Cave Exploring Burger sitting on a chair.</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: Poor Dude needed a rest! (By Remy)</p>
+          </puzzle-card>
+
+          <puzzle-card id="astral-plane-burger" class="solved">
+            <h3>Astral Plane Burger</h3>
+            <p>Difficulty: Intense</p>
+            <p>Hint: Hidden in Forest, what lies behind the waterfall?</p>
+            <solution-box>
+              <strong>Solution:</strong> Go through the dark entrance in the waterfall in Forest and type 'astraleclipse' into the TextBox.<br/>
+              <strong>Explanation:</strong>
+              The hint indicates that you should go behind the waterfall in Forest (top-right corner). Now, there is nothing behind the waterfall structure, but actually behind the water is a black entrance, which you can walk into.
+              <p>Once you enter the black entrance, you will be in a cave with purple water and a shrine in the center. This is where the puzzle starts.</p>
+              <div class="post-image-container">
+                <img src="assets/images/blog-assets/findtheburgers/solutions/astral-plane-1.png" alt="Map Overview" />
+              </div>
+              <p>Many of you will probably recognise the cipher used instantly, but if not, a helpful hint below has been left.</p>
+              <p>Wing 🔔 is a clue to the cipher's name. The bell here doesnt mean bell, but rather means the sound of a bell: ding. </p>
+              <p>Putting these two words together, we get Wingding, which is close enough to Wingdings, the name of the cipher.</p>
+              <p>Using a tool such as dcode.fr (https://www.dcode.fr/wingdings-font), we can decode the message.</p>
+              <p>I personally found it hard to get the right symbols, but the encoded message on the shrine is <span class="wingdings">astraleclipse</span>.</p>
+              <p>Now, decode it to get your code: astraleclipse.</p>
+              <p>Entering this into the TextBox on the ground before the shrine will spawn the Astral Plane Burger!</p>
+              <p>Touch the burger for the badge!</p>
+            </solution-box>
+            <p>Description: I hope he doesn't summon anything.. (By Gravysaus)</p>
           </puzzle-card>
         `,
         puzzles: [
