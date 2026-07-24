@@ -1,5 +1,6 @@
 let activeTagFilter = 'all';
 let activePostId = null;
+let activePostTabId = null;
 
 function clearContainer(element) {
   element.innerHTML = '';
@@ -18,6 +19,8 @@ function renderTabs(tabsData, activeTabId, onTabClick) {
     
     button.addEventListener('click', () => {
       activePostId = null;
+      activePostTabId = null;
+      renderTabs(tabsData, tab.id, onTabClick);
       onTabClick(tab.id);
     });
     navContainer.appendChild(button);
@@ -124,21 +127,59 @@ function renderSinglePost(container, postId) {
   const post = BLOG_POSTS.find(p => p.id === postId);
   if (!post) return renderBlogPosts(container);
 
-  let postBody = post.body || '';
+  let tabsBarHTML = '';
+  if (post.tabs && post.tabs.length > 0) {
+    if (!activePostTabId) {
+      activePostTabId = post.tabs[0].id;
+    }
 
-  if (post.puzzles && post.puzzles.length > 0) {
-    const puzzleCards = post.puzzles.map((p, i) => `
-      <div class="puzzle-grid-card ${p.status || 'solved'}" onclick="scrollToElement('${p.id}')">
-        <div class="puzzle-card-header">
-          <span class="puzzle-index">${p.index || `#${i + 1}`}</span>
-          <span class="puzzle-diff">${p.difficulty || ''}</span>
-        </div>
-        <div class="puzzle-card-body">
-          <h4>${p.title}</h4>
-          <p class="puzzle-sub">${p.subtitle || ''}</p>
-        </div>
-      </div>
+    const tabsButtons = post.tabs.map(tab => `
+      <button 
+        class="post-inner-tab ${tab.id === activePostTabId ? 'active' : ''}" 
+        onclick="switchPostTab('${post.id}', '${tab.id}')">
+        ${tab.name}
+      </button>
     `).join('');
+
+    tabsBarHTML = `<div class="post-tabs-bar">${tabsButtons}</div>`;
+  }
+
+  let currentTabPage = null;
+  if (post.tabpages && post.tabpages.length > 0) {
+    currentTabPage = post.tabpages.find(tp => tp.tabid === activePostTabId) || post.tabpages[0];
+  }
+
+  let mainPostBody = post.body || '';
+  let tabPostBody = currentTabPage ? (currentTabPage.body || '') : '';
+  const puzzlesList = currentTabPage ? currentTabPage.puzzles : (post.puzzles || []);
+
+  if (puzzlesList && puzzlesList.length > 0) {
+    const puzzleCards = puzzlesList.map(p => {
+      const isWhiteBg = p.difficulty_color && (
+        p.difficulty_color.toLowerCase() === '#ffffff' || 
+        p.difficulty_color.toLowerCase() === '#fff' || 
+        p.difficulty_color.toLowerCase() === 'white'
+      );
+
+      const diffStyle = p.difficulty_color 
+        ? `style="background: ${p.difficulty_color}; border-color: ${p.difficulty_color}; color: ${isWhiteBg ? '#000000' : '#ffffff'};"` 
+        : '';
+      const imageHTML = p.image ? `<div class="puzzle-card-img-wrap"><img src="${p.image}" alt="${p.title}" /></div>` : '';
+
+      return `
+        <div class="puzzle-grid-card ${p.status || 'solved'}" onclick="toggleSolution('${p.id}')">
+          <div class="puzzle-card-header">
+            <span class="puzzle-index">${p.index || ''}</span>
+            <span class="puzzle-diff" ${diffStyle}>${p.difficulty || ''}</span>
+          </div>
+          <div class="puzzle-card-body">
+            ${imageHTML}
+            <h4>${p.title}</h4>
+            <p class="puzzle-sub">${p.subtitle || ''}</p>
+          </div>
+        </div>
+      `;
+    }).join('');
 
     const puzzleIndexHTML = `
       <div class="puzzle-index-container">
@@ -147,7 +188,11 @@ function renderSinglePost(container, postId) {
       </div>
     `;
 
-    postBody = postBody.replace('<puzzle-index></puzzle-index>', puzzleIndexHTML);
+    if (tabPostBody.includes('<puzzle-index></puzzle-index>')) {
+      tabPostBody = tabPostBody.replace('<puzzle-index></puzzle-index>', puzzleIndexHTML);
+    } else if (mainPostBody.includes('<puzzle-index></puzzle-index>')) {
+      mainPostBody = mainPostBody.replace('<puzzle-index></puzzle-index>', puzzleIndexHTML);
+    }
   }
 
   container.innerHTML = `
@@ -166,30 +211,54 @@ function renderSinglePost(container, postId) {
 
       <hr class="divider">
 
-      <div class="single-post-body">
-        ${postBody}
+      <div class="single-post-body top-body">
+        ${mainPostBody}
       </div>
+
+      ${tabsBarHTML}
+
+      ${tabPostBody ? `<div class="single-post-body tab-body">${tabPostBody}</div>` : ''}
     </article>
   `;
 }
 
-function scrollToElement(id) {
-  const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: 'smooth' });
+function switchPostTab(postId, tabId) {
+  activePostTabId = tabId;
+  const contentArea = document.getElementById('app-content');
+  if (contentArea) {
+    renderSinglePost(contentArea, postId);
+  }
+}
+
+function toggleSolution(id) {
+  const card = document.getElementById(id);
+  if (!card) return;
+
+  const isOpen = card.classList.contains('open');
+
+  document.querySelectorAll('puzzle-card').forEach(el => el.classList.remove('open'));
+
+  if (!isOpen) {
+    card.classList.add('open');
+    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 }
 
 function openPost(postId) {
   activePostId = postId;
+  activePostTabId = null;
   renderPage('blog');
 }
 
 function closePost() {
   activePostId = null;
+  activePostTabId = null;
   renderPage('blog');
 }
 
 function setTagFilter(tag) {
   activeTagFilter = tag;
   activePostId = null;
+  activePostTabId = null;
   renderPage('blog');
 }
