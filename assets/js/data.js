@@ -45,7 +45,7 @@ const BLOG_POSTS = [
     body: `
       <p>Welcome to my guide to Find The Burgers!</p>
       <p>In this post, I will explain all the burgers and how to find them in the game. This is a work in progress, so stay tuned for more updates!</p>
-      <p>I have never seen YouTube videos explaining the burgers, and the wiki does not explain it very well, so as a solver of this game, I will explain them for you!</p>
+      <p>I have never seen YouTube videos explaining the burgers, and the wiki does not explain it very well, so as a solver of this game, I will try to explain them completely for you!</p>
     `,
 
     tabs: [
@@ -57,6 +57,8 @@ const BLOG_POSTS = [
     tabpages: [
       {
         tabid: 'burgers',
+        numdocumented: 14,
+        numpuzzles: 98,
         body: `
           <p>Here are all the standard burgers!</p>
 
@@ -116,7 +118,7 @@ const BLOG_POSTS = [
           </puzzle-card>
 
           <puzzle-card id="bitten-burger" class="solved">
-            <h3>Burger</h3>
+            <h3>Bitten Burger</h3>
             <p>Difficulty: Easy</p>
             <p>Hint: Hidden In Spawn, on a tree.</p>
             <solution-box>

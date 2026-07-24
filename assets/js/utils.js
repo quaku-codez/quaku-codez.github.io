@@ -183,7 +183,7 @@ function renderSinglePost(container, postId) {
 
     const puzzleIndexHTML = `
       <div class="puzzle-index-container">
-        <h3>puzzles documented</h3>
+        <h3>puzzles documented (${currentTabPage.numdocumented}/${currentTabPage.numpuzzles})</h3>
         <div class="puzzle-grid">${puzzleCards}</div>
       </div>
     `;
