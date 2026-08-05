@@ -22,9 +22,11 @@ export const blogData = {
         {
           tabid: 'burgers',
           label: 'Burgers',
+          
           body: `
             <p>Here are all the standard burgers!</p>
-
+            
+            <h2>puzzles documented (14/98)</h2><br/>
             <puzzle-card id="10k-visits-burger" class="solved">
               <h3>10K Visits Burger</h3>
               <p>Difficulty: Easy</p>
@@ -340,8 +342,49 @@ export const blogData = {
         {
           tabid: 'hidden-burgers',
           label: 'Hidden Burgers',
-          body: `<p>Hidden Burgers breakdown coming soon!</p>`,
-          puzzles: []
+          body: `
+            <p>Hidden Burgers are a special group of burgers that don't contribute to the main leaderboard. They are harder than the standard burgers and require at least 25 burgers to unlock. To access the Hidden-Dex, the index for hidden burgers, type 'hidden' into the Burger-Dex's search bar.</p>
+            
+            <p>Here are all the <i>hidden</i> burgers!</p>
+
+            <h2>puzzles documented (0/18)</h2><br/>
+            <puzzle-card id="10k-visits-burger" class="solved">
+              <h3>10K Visits Burger</h3>
+              <p>Difficulty: Easy</p>
+              <p>Hint: Hidden in Spawn, on top of the hill.</p>
+              <solution-box>
+                <strong>Solution:</strong> Located next to the donation leaderboard in the top left of Spawn.<br/>
+                <strong>Explanation:</strong>
+                There isnt much to say, as the hint rather explains it.
+                <p>However, the location being on top of the hill isnt that clear, but the donation leaderboard's area is elevated, which, although small, is a hill.</p>
+              </solution-box>
+              <p>Description: TYSM! :D (By Jay)</p>
+            </puzzle-card>
+          `,
+          puzzlesCompleted: 0,
+          totalPuzzles: 17,
+          puzzles: [
+            { id: 'badge-burger', index: '', difficulty: 'Insane', difficulty_color: '#0000ff', image: 'assets/images/blog-assets/findtheburgers/badge-burger.png', title: 'Badge Burger', subtitle: '', status: 'unsolved' },
+            { id: 'jelly-burger', index: '', difficulty: 'Insane', difficulty_color: '#0000ff', image: 'assets/images/blog-assets/findtheburgers/jelly-burger.png', title: 'Jelly Burger', subtitle: '', status: 'unsolved' },
+            { id: 'sunset-burger', index: '', difficulty: 'Insane', difficulty_color: '#0000ff', image: 'assets/images/blog-assets/findtheburgers/sunset-burger.png', title: 'Sunset Burger', subtitle: '', status: 'unsolved' },
+            { id: 'ultra-group-burger', index: '', difficulty: 'Insane', difficulty_color: '#0000ff', image: 'assets/images/blog-assets/findtheburgers/ultra-group-burger.png', title: 'Ultra Group Burger', subtitle: '', status: 'unsolved' },
+            
+            { id: 'bundun-burger', index: '', difficulty: 'Extreme', difficulty_color: '#00aaff', image: 'assets/images/blog-assets/findtheburgers/bundun-burger.png', title: 'Bundun Burger', subtitle: '', status: 'unsolved' },
+            { id: 'burger313', index: '', difficulty: 'Extreme', difficulty_color: '#00aaff', image: 'assets/images/blog-assets/findtheburgers/burger313.png', title: 'Burger313', subtitle: '', status: 'unsolved' },
+            { id: 'everything-burger', index: '', difficulty: 'Extreme', difficulty_color: '#00aaff', image: 'assets/images/blog-assets/findtheburgers/everything-burger.png', title: 'Everything Burger', subtitle: '', status: 'unsolved' },
+            { id: 'light-matter-burger', index: '', difficulty: 'Extreme', difficulty_color: '#00aaff', image: 'assets/images/blog-assets/findtheburgers/light-matter-burger.png', title: 'Light Matter Burger', subtitle: '', status: 'unsolved' },
+            { id: 'timekeeper-burger', index: '', difficulty: 'Extreme', difficulty_color: '#00aaff', image: 'assets/images/blog-assets/findtheburgers/timekeeper-burger.png', title: 'Timekeeper Burger', subtitle: '', status: 'unsolved' },
+            { id: 'thunder-burger', index: '', difficulty: 'Extreme', difficulty_color: '#00aaff', image: 'assets/images/blog-assets/findtheburgers/thunder-burger.png', title: 'Thunder Burger', subtitle: '', status: 'unsolved' },
+            
+            { id: 'diamond-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#00ffff', image: 'assets/images/blog-assets/findtheburgers/diamond-burger.png', title: 'Diamond Burger', subtitle: '', status: 'unsolved' },
+            { id: 'graduating-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#00ffff', image: 'assets/images/blog-assets/findtheburgers/graduating-burger.png', title: 'Graduating Burger', subtitle: '', status: 'unsolved' },
+            { id: 'polychromatic-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#00ffff', image: 'assets/images/blog-assets/findtheburgers/polychromatic-burger.png', title: 'Polychromatic Burger', subtitle: '', status: 'unsolved' },
+            { id: 'peach-blossom-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#00ffff', image: 'assets/images/blog-assets/findtheburgers/peach-blossom-burger.png', title: 'Peach Blossom Burger', subtitle: '', status: 'unsolved' },
+            
+            { id: 'forbidden-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#ffffff', image: 'assets/images/blog-assets/findtheburgers/forbidden-burger.png', title: 'Forbidden Burger', subtitle: '', status: 'unsolved' },
+            { id: 'neon-world-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#ffffff', image: 'assets/images/blog-assets/findtheburgers/neon-world-burger.png', title: 'Neon World Burger', subtitle: '', status: 'unsolved' },
+            { id: 'pathway-burger', index: '', difficulty: 'Horrifying', difficulty_color: '#ffffff', image: 'assets/images/blog-assets/findtheburgers/pathway-burger.png', title: 'Pathway Burger', subtitle: '', status: 'unsolved' }
+        ]
         }
       ]
     },
