@@ -350,6 +350,9 @@ export const blogData = {
             <p>Here are all the <i>hidden</i> burgers!</p>
 
             <h2>puzzles documented (0/18)</h2><br/>
+
+            <puzzle-index></puzzle-index>
+
             <puzzle-card id="10k-visits-burger" class="solved">
               <h3>10K Visits Burger</h3>
               <p>Difficulty: Easy</p>
