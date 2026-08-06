@@ -5,12 +5,12 @@ my site!!!!!!!!!!111111111111
 <h3>BTW, if you are here for the puzzle solutions, click on the <u>blogs</u> tab in the top right of the site!</h3>
 
 <h2>Contents</h2>
-- home page
-- about mee
-- links
+- home page<br>
+- about mee<br>
+- links<br>
 - blog posts (including puzzle explanations!)
 
 <h2>Puzzles documented:</h2>
-ROBLOX - Find The Burgers // All Burgers Explained
-..
-thats it so far
+ROBLOX - Find The Burgers // All Burgers Explained<br>
+..<br>
+thats it so far<br>
