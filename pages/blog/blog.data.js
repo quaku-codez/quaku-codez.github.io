@@ -9,7 +9,7 @@ export const blogData = {
       title: 'Find the Burgers // All Burgers Explained',
       date: 'July 24, 2026',
       summary: 'Work in Progress!',
-      tags: ['puzzle', 'wip'],
+      tags: ['puzzle', 'roblox'],
       body: `
         <p>Welcome to my guide to Find The Burgers!</p>
         <p>In this post, I will explain all the burgers and how to find them in the game. This is a work in progress, so stay tuned for more updates!</p>
@@ -27,6 +27,8 @@ export const blogData = {
             <p>Here are all the standard burgers!</p>
             
             <h2>puzzles documented (14/98)</h2><br/>
+            
+            <puzzle-index></puzzle-index>
             <puzzle-card id="10k-visits-burger" class="solved">
               <h3>10K Visits Burger</h3>
               <p>Difficulty: Easy</p>
