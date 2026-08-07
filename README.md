@@ -11,6 +11,7 @@ my site!!!!!!!!!!111111111111
 - blog posts (including puzzle explanations!)
 
 <h2>Puzzles documented:</h2>
-ROBLOX - Find The Burgers // All Burgers Explained<br>
+ROBLOX - Find The Burgers // All Burgers Explained (EXTREMELY WIP)<br>
+ROBLOX - timmy town of awesomeness // All Badges Explained (getting there! main focus currently as small num of badges)
 ..<br>
 thats it so far<br>
