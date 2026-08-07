@@ -5,6 +5,223 @@ export const blogData = {
   tagline: 'puzzles, writeups & random thoughts',
   posts: [
     {
+      id: 'timmy-town-of-awesomeness',
+      title: 'timmy town of awesomeness // All Badges Explained',
+      date: 'August 7th, 2026',
+      summary: 'Work in Progress!',
+      tags: ['puzzle', 'roblox'],
+      body: `
+        <p>Welcome to my guide to timmy town of awesomeness!</p>
+        <p>In this post, I will explain all the badges and how to solve them. This is a work in progress, so stay tuned for more updates!</p>
+        <p>I might just be the first person to do this.</p>
+        <p></p>
+    
+        `,
+      postTabs: [
+        {
+          tabid: 'secrets',
+          label: 'Secrets',
+          
+          body: `
+            <p>Here are all the secrets!</p>
+            
+            <h2>puzzles documented (0/6)</h2><br/>
+            <puzzle-index></puzzle-index>
+            <puzzle-card id="mysterious-object-v" class="unsolved">
+              <h3>Mysterious Object V</h3>
+              <p><b>Description:</b> <br>P1: Shedletsky, A game, May 2, 2007, a copy of it made by someone special, try understanding the reference in the badge's name.<br>P2: ...What happened to the first one out of the 7? Why does only the 7th one exist?</p>
+              <h3>Personal Opinion: BULLSHIT</h3>
+              <solution-box>
+                <strong>Solution:</strong> [CANT LEAK]<br/>
+                <p></p>
+                <strong>Quick solution:</strong> Must.. not leak...
+                <p></p>
+                <strong>Explanation:</strong>
+                <p></p>
+                <p>I'm sorry, but I can't reveal this one yet :c</p>
+              </solution-box>
+              <p></p> 
+              <h3>Trivia</h3>
+                <p>1. This secret took the longest time to be solved, around 2-3 days.
+                <p>2. Before being solved, this badge's description was edited 4+ times for nerfing.
+                <p>3. This secret's part 1 was broken!
+                <p>4. First 3 victors: find-nothing, elgato328, me (quakudev).</p>  
+              i got leaked this secret by the second, who got help from the first. thats the state of this secret.
+            </puzzle-card>
+          `,
+          puzzles: [
+            { id: 'triangulation', index: '#1', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/triangulation.png', title: 'Triangulation', subtitle: '', status: 'unsolved' },
+            { id: 'shattered-fragmentation', index: '#2', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/shattered-fragmentation.png', title: 'Shattered Fragmentation', subtitle: '', status: 'unsolved' },
+            { id: 'blossom', index: '#3', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/blossom.png', title: 'Blossom', subtitle: '', status: 'unsolved' },
+            { id: 'dialtone', index: '#4', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/dialtone.png', title: 'Dialtone', subtitle: '', status: 'unsolved' },
+            { id: 'an-end', index: '#5', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/an-end.png', title: 'An End', subtitle: '', status: 'unsolved' },
+            { id: 'mysterious-object-v', index: '#6', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/mysterious-object-v.png', title: 'Mysterious Object V', subtitle: '', status: 'unsolved' },
+          ]
+        },
+        {
+          tabid: 'bonus',
+          label: 'Bonus',
+          body: `
+            <p>The bonus badges, labelled as (NOT A SECRET) in their description, are some extra challenges not required for completion, except for one, which is a pre-requisite to the hardest secret in the game.</p>
+            
+            <p>Here are all the <i>bonus</i> badges!</p>
+
+            <h2>puzzles documented (4/6)</h2><br/>
+
+            <puzzle-index></puzzle-index>
+
+            <puzzle-card id="welcome-to-timmytown" class="solved">
+              <h3>Welcome to Timmytown</h3>
+              <h3>#1B</h3>
+              <p>Description: Thanks for coming!</p>
+              <solution-box>
+                <strong>Solution:</strong> Join the game for the first time.<br/>
+                <p></p>
+                <strong>Explanation:</strong>
+                <p>If you joined the game before reviewing the badges, good job! You have solved the puzzle.</p>
+
+                <p>If you havent, then you would perhaps not fully know how to get it, as timmytown could be the name of a place inside the game. Nevertheless, in the 99% chance that you will join after, you will get the badge.</p>
+              </solution-box>
+            </puzzle-card>
+
+            <puzzle-card id="onion" class="unsolved">
+              <h3>onion</h3>
+              <h3>#2B</h3>
+              <p>Description: you found it! the onion</p>
+              <solution-box>
+                <strong>Solution:</strong> Find the onion in the game.<br/>
+                <p></p>
+                <strong>Quick solution:</strong> Touch the hidden onion in ???.
+                <p></p>
+                <strong>Explanation:</strong>
+                <p></p>
+                <h2> Post-??? </h2>
+                <p>Unsolved... I do not know where the new position of the onion is.</p>
+
+                <h2>Original Solution</h2>
+                <p>This badge is designed to be beginner-friendly, sort of, involving no subplaces and no puzzles.</p>
+
+                <p>The badge's description indicates that this is something you need to find. This doesn't immediately say that it will be easy to find, but after a quick first run through the map, you may be able to spot this.</p>
+                <p>Here is a poor diagram showing where the lake is from spawn!:</p>
+                <div class="post-image-container">
+                  <img src="assets/images/blog-assets/timmytownofawesomeness/solutions-assets/lake-location-from-spawn.png" alt="Lake location from spawn!" style="width: 100%; height: auto;" />
+                </div>
+                <p>In the lake area, there is a wooden post connecting to a wooden port where the onion is behind, in the water.</p>
+
+                <p>Touch the onion for the badge!</p>
+              </solution-box>
+            </puzzle-card>
+
+            <puzzle-card id="onion-2-electric-boogaloo" class="solved">
+              <h3>onion 2: electric boogaloo</h3>
+              <h3>#3B</h3>
+              <p>Description: You found it, the golden onion. Hidden in ANY subplace, good luck!</p>
+              <solution-box>
+                <strong>Solution:</strong> Find the golden onion in the game.<br/>
+                <p></p>
+                <strong>Quick solution:</strong> Touch the hidden yellow, neon onion in the deafening subplace, using LaunchData=4348709, behind a tree behind the news station.
+                <p></p>
+                <strong>Explanation:</strong>
+                <p></p>
+                <p>The name and description evidently point toward the first of the trilogy: onion.</p>
+                <p>It can be deduced that we must find a golden onion instead, similar to the previous one, except now it is hidden in any subplace!</p>
+                <p>This is much harder, as it requires you to actually solve for all the subplaces.</p>
+                <p>However, if you know the update dates from the discord, and the time the badge was created, you can deduce which subplaces it is possible for the onion to be in, as long as it hasn't been moved (as of now it hasn't).</p>
+                <p>Also, this will be hard as it could be ANYWHERE, in ANY subplace!</p>
+                <p>You will eventually find this in the deafening subplace from secret #1: Triangulation.</p>
+                <p>You can access this subplace by launching the game with LaunchData=4348709.</p>
+                <p>If you would like to see the explanation on how to reach this subplace, I would recommend you look at the secret #1 solution.</p>
+                <p>You will find a yellow, neon onion located behind a tree behind the news station.</p>
+                <p>Touch it for the badge!</p>
+                <p>Touch the onion for the badge!</p>
+              </solution-box>
+              <b>Although it's not a secret, I achieved FV on this! Actually, this one wasn't solved by anyone else for quite a while...</b>
+            </puzzle-card>
+
+            <puzzle-card id="onion-3-what-am-i-doing-atp" class="unsolved">
+              <h3>onion 3: what am i doing atp 💀💀💀</h3>
+              <h3>#4B</h3>
+              <b>Description:</b><br>
+               [ Onion 3 ]<br>
+               Difficulty: 1001<br>
+               Solution: Enter "(Insert random number from 13571-17142)" into your launchData.
+              <solution-box>
+                <strong>Solution:</strong> Successfully guess the correct number between 13571 and 17142 and enter it into your LaunchData.<br/>
+                <p></p>
+                <strong>Quick solution:</strong> Enter ??? into your LaunchData.
+                <p></p>
+                <strong>Explanation:</strong>
+                <p></p>
+                <p>The hint says it all. Guess a random number inbetween 13571 and 17142, and join with that number as your LaunchData.</p>
+                <p>I mean the solution is solved but nobody (possibly 1 but may be subplace giltcher) knows the number.</p>
+                <p>Joining with that LaunchData will send you to the roulette subplace (we know this through process of elimination). There, somehow, you will get the badge.</p>
+                </solution-box>
+
+              <h3>Trivia</h3>
+                <p>1. The badge's description is a reference to Secret Universe, a puzzle game. The description matches the statistics shown for each secret in the index of Secret Universe.</p>
+                <p>2. The number range has been changed twice since the initial release. Original: 8242-24242. Nerf 1: 10000?-24242</p>
+            </puzzle-card>
+
+            <puzzle-card id="dontent-celeted" class="solved">
+              <h3>Dontent Celeted</h3>
+              <h3>#5B</h3>
+              <b>Description:</b>This really is some king of... CONTENT DELETED<br>
+              <solution-box>
+                <strong>Solution:</strong> Find the shrine to Content Deleted.<br/>
+                <p></p>
+                <strong>Quick solution:</strong> Touch the glowing shrine to Content Deleted in the fragmented subplace (LaunchData=P5bn54ry).
+                <p></p>
+                <strong>Explanation:</strong>
+                <p></p>
+                <p>Typical of bonus badges, there is no clear place to start.</p>
+                <p>When the update with this badge was released, Timmy (owner) also announced that a secret had been added to Secret #2: Shattered Fragmentation's final subplace - fragmented. Sadly, if you weren't there, you have no advantage. :(</p>
+                <p>Anyway, the correct subplace you will find to be fragmented, secret #2's final subplace. You can get here with LaunchData=P5bn54ry.</p>
+                <p>If you want to know how this LaunchData is found, check out secret #2's solution.</p>
+                <p>Once you are here, you will perhaps easily see the glowing weird structure with floating roblox content deleted symbols.</p>
+                <p>After making the voyage there, you will get the badge upon touching the shrine.</p>
+                <p>Note: the fact that the desc mentions a king does match the fact that it is a shrine, but it does not help you actually find such shrine.</p>
+              </solution-box>
+              <p></p>
+              <h3>Trivia</h3>
+                <p>1. This badge, and the description, is a reference to a puzzle game called Secret Universe's (as of that time and as I am writing this weeks later), infamous for being unsolved.</p>          
+            </puzzle-card>
+
+            <puzzle-card id="strange-ticket" class="solved">
+              <h3>Strange Ticket</h3>
+              <h3>#6B</h3>
+              <b>Description:</b> Requires the first 4 secrets. launchData=ticket <br>
+              <b>Personal Opinion: foreshadowing :scary:</b>
+              <solution-box>
+                <strong>Solution:</strong> Find the hidden ticket.<br/>
+                <p></p>
+                <strong>Quick solution:</strong> Touch the ticket on the ground before the booth in the ticket booth subplace (LaunchData=ticket).
+                <p></p>
+                <strong>Explanation:</strong>
+                <p></p>
+                <p>Easiest bonus badge? Yes, but it requires the first four secrets, so No.</p>
+                <p>Alright, the description tells us to use ticket as our LaunchData. Doing so, we are teleported to the ticket booth subplace.</p>
+                <p>This is a copy of the starter place except with red lighting. However, the major difference between the two is that there is now a ticket booth!</p>
+                <p>In front of the ticket booth, on the ground, will be the ticket. Touch it for the badge!</p>
+              </solution-box>
+              <p></p>
+              <h3>Trivia</h3>
+                <p>1. This badge is the only bonus badge that is related to the main secrets.</p>
+                <p>2. This badge is required for the hardest secret, An End (#5).</p>  
+                <p>3. This badge was created for the lore of An End, and before this badge, An End's description used to say required secrets 1-4 rather than required Strange Ticket.</p>        
+            </puzzle-card>
+          `,
+          puzzles: [
+            { id: 'welcome-to-timmytown', index: '#1B', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/welcome-to-timmytown.png', title: 'Welcome to Timmytown', subtitle: '', status: 'solved' },
+            { id: 'onion', index: '#2B', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/onion.png', title: 'onion', subtitle: '', status: 'unsolved' },
+            { id: 'onion-2-electric-boogaloo', index: '#3B', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/onion-2-electric-boogaloo.png', title: 'onion 2: electric boogaloo', subtitle: '', status: 'solved' },
+            { id: 'onion-3-what-am-i-doing-atp', index: '#4B', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/onion-3-what-am-i-doing-atp.png', title: 'onion 3: what am i doing atp 💀💀💀', subtitle: '', status: 'unsolved' },
+            { id: 'dontent-celeted', index: '#5B', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/dontent-celeted.png', title: 'Dontent Celeted', subtitle: '', status: 'solved' },
+            { id: 'strange-ticket', index: '#6B', difficulty: '', difficulty_color: '', image: 'assets/images/blog-assets/timmytownofawesomeness/strange-ticket.png', title: 'Strange Ticket', subtitle: '', status: 'solved' },
+          ]
+        }
+      ]
+    },
+    {
       id: 'find-the-burgers',
       title: 'Find the Burgers // All Burgers Explained',
       date: 'July 24, 2026',

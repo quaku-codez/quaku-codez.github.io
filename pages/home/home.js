@@ -7,7 +7,9 @@ export function render(container) {
       <div class="hero-card">
         <h3>hi</h3>
         <p>welcome to my personal site on the web. explore my links or check out my blog posts for puzzle breakdowns and code experiments!</p>
-      </div>
+        <br>
+        <h4>BTW, if you're here for puzzle solutions, head to blogs in the top right corner! please do check out my stuff tho! ALSO IM NOT A LEAKER I JUST LIKE EXPLAINING</h4>
+        </div>
 
       <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">check out my best friend's matching site!</h3>
       <div class="links-grid">
